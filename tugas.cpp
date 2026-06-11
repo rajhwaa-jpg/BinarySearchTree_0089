@@ -102,4 +102,20 @@ public:
             preorder(ptr->rightchild);
         }
     }
-}
+    void postorder(node *ptr)
+    {
+        //perfoms the postorder traveelsal os the tree
+
+        if (ROOT == NULL)
+        {
+            cout << "tree is empty" << endl;
+            return;
+        }
+        if (ptr != NULL)
+        {
+            postorder(ptr->leftchild);
+            postorder(ptr->rightchild);
+            cout << ptr->info << "";
+        }
+    }   
+};
