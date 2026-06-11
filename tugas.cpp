@@ -57,4 +57,13 @@ public:
             parent->rightchild = newnode;
         }
     }
+    //this function searches the current node of the specified node
+    //as well as the current node of is parrent
+    void search(string element, node *&parent, node *&currentnode)
+    {
+        currentnode = ROOT;
+        parent = NULL;
+
+        while ((currentnode !=NULL) && (currentnode->info != element))
+    }
 }
